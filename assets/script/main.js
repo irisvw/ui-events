@@ -38,6 +38,10 @@ window.addEventListener('mousemove', (e) => {
 
 //  -----------------------
 
-interaction1.addEventListener('mouseleave', () => {
-  interaction1.classList.toggle('flip');
-});
+let development = document.querySelector('a:nth-of-type(4)');
+
+addEventListener('keydown', (e) => {
+  if (e.shiftKey) {
+    development.classList.toggle('shifted');
+  }
+})
