@@ -98,3 +98,28 @@ a:nth-of-type(1) {
 .flip {
   transform: rotateY(.5turn);
 }
+
+.bibber {
+  animation-name: bibber;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bibber {
+  0% {
+    transform: rotateZ(0);
+  }
+
+  25% {
+    transform: rotateZ(-5deg);
+  }
+
+  75% {
+    transform: rotateZ(5deg);
+  }
+
+  100% {
+    transform: rotateZ(0);
+  }
+}
