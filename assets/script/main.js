@@ -45,3 +45,11 @@ addEventListener('keydown', (e) => {
     development.classList.toggle('shifted');
   }
 })
+
+//  -----------------------
+
+let sprint5 = document.querySelector('a:nth-of-type(5)');
+
+sprint5.addEventListener('dblclick', (e) => {
+  sprint5.classList.toggle('drop'); 
+});
