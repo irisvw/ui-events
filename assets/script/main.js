@@ -1,3 +1,4 @@
+// ----------------------- INTERACTION ---
 let interaction = document.querySelector('a:nth-of-type(12)')
 
 interaction.addEventListener('click', jumpHandler)
@@ -7,7 +8,7 @@ function jumpHandler() {
   interaction.classList.toggle('jump')
 }
 
-//  -----------------------
+// ----------------------- FRONTEND ----
 let frontend = document.querySelector('a:nth-of-type(1)');
 
 frontend.addEventListener('mouseenter', () => {
@@ -18,7 +19,7 @@ frontend.addEventListener('mouseleave', () => {
   frontend.classList.toggle('flip');
 });
 
-//  -----------------------
+// ----------------------- DESIGN ---
 
 let design = document.querySelector('a:nth-of-type(2)');
 
@@ -36,17 +37,28 @@ window.addEventListener('mousemove', (e) => {
 }
 );
 
-//  -----------------------
+// ----------------------- & ---
+
+let ampersand = document.querySelector('a:nth-of-type(3)');
+let root = document.documentElement;
+let hue = 0;
+
+// ----------------------- DEVELOPMENT ---
 
 let development = document.querySelector('a:nth-of-type(4)');
 
 addEventListener('keydown', (e) => {
+  // ampersand
+  hue += 15;
+  root.style.setProperty('--hue', hue + "deg");
+
+  // development
   if (e.shiftKey) {
     development.classList.toggle('shifted');
   }
 })
 
-//  -----------------------
+// ----------------------- SPRINT-5---
 
 let sprint5 = document.querySelector('a:nth-of-type(5)');
 
