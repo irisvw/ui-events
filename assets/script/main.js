@@ -58,10 +58,18 @@ addEventListener('keydown', (e) => {
   }
 })
 
-// ----------------------- SPRINT-5---
+// ----------------------- SPRINT-5 ---
 
 let sprint5 = document.querySelector('a:nth-of-type(5)');
 
 sprint5.addEventListener('dblclick', (e) => {
   sprint5.classList.toggle('drop'); 
 });
+
+// ----------------------- FIX ---
+
+let fix = document.querySelector('a:nth-of-type(6)');
+
+fix.addEventListener('contextmenu', (e) => {
+  fix.textContent = "🎉";
+})
